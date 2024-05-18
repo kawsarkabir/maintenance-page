@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.maintenance {
+  background-image: url(https://demo.wpbeaveraddons.com/wp-content/uploads/2018/02/main-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.maintenance {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.maintenance {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.maintenance_contain {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15px;
+}
+.maintenance_contain img {
+  width: auto;
+  max-width: 100%;
+}
+.comming-soon {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.title {
+  color: #000000;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: block;
+  word-break: break-word;
+}
+
+.description {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.description p {
+  margin: 0;
+}
+
+.social-text {
+  color: #000000;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.social-icon {
+  margin-left: 7px;
+  margin-right: 7px;
+  display: inline-block;
+  line-height: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.social-icon a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+
+.social-icon a i {
+  border-radius: 100px;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.social-icon:nth-child(1) a i {
+  color: #158acb;
+  border: 2px solid #158acb;
+}
+.social-icon:nth-child(2) a i {
+  color: #25d366;
+  border: 2px solid #25d366;
+}
+
+.social-icons {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}

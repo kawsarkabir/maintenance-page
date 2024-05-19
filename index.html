@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Under Maintenance</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- font asesome cdn link here  -->
+    <!-- font awesome CDN link -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -24,14 +24,18 @@
         </div>
         <div class="description">
           <p>
-            Someone has kidnapped our site. We are negotiation ransom and<br />will
-            resolve this issue in 24/7 hours
+            Our website is currently undergoing scheduled maintenance, <br />
+            we will be back soon! Thank you for being so patient.
           </p>
         </div>
         <span class="social-text">We are social</span>
         <div class="social-icons">
           <span class="social-icon">
-            <a href="#" target="_blank" title="Facebook">
+            <a
+              href="https://www.facebook.com/dotlik"
+              target="_blank"
+              title="Facebook"
+            >
               <i class="fa-brands fa-facebook"></i>
             </a>
           </span>
@@ -47,5 +51,27 @@
         </div>
       </div>
     </div>
+    <script>
+      const countDownDate = new Date();
+      countDownDate.setDate(countDownDate.getDate() + 60);
+
+      const countdownfunction = setInterval(function () {
+        const now = new Date().getTime();
+
+        const distance = countDownDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerHTML = days + " DAY";
+        document.getElementById("hours").innerHTML = hours + " HOURS";
+        document.getElementById("minutes").innerHTML = minutes + " MINUTES";
+        document.getElementById("seconds").innerHTML = seconds + " SECONDS";
+      }, 1000);
+    </script>
   </body>
 </html>
